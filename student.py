@@ -1,6 +1,6 @@
 class Student:
 
-    def __init__(self, name, sex age = 0):
+    def __init__(self, name, sex, age = 0):
         self.name = name
         self.age = age
         self.sex = sex
@@ -13,11 +13,13 @@ class Student:
     def learn(self, points):
         self.score += points
 
-tivadar = Student("Rontó Tivadar", 16, "male")
+tivadar = Student("Rontó Tivadar", "male", 16)
 leila = Student("Pusztító Leila", "female")
 
 tivadar.introduce()
 tivadar.learn(12)
 tivadar.introduce()
 
-leila.introduce
+leila.introduce()
+leila.learn(-2)
+leila.introduce()
