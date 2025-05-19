@@ -4,12 +4,16 @@ class Student:
     sex = ""
     score = 0
 
+    def introduce(self):
+        print (f"Név: {self.name}, Kor: {self.age}, Nem: {self.sex}, Pontszám: {self.score}")
+
 tivadar = Student()
-print(tivadar)
+#print(tivadar)
 
 tivadar.name = "El tivadar"
 tivadar.age = 16
 tivadar.sex = "male"
 tivadar.score = 20
 
-print (f"Név: {tivadar.name}, Kor: {tivadar.age}, Pontszám: {tivadar.score}")
+#print (f"Név: {tivadar.name}, Kor: {tivadar.age}, Pontszám: {tivadar.score}")
+tivadar.introduce()
